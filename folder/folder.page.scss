@@ -1,0 +1,101 @@
+ion-menu-button {
+  color: var(--ion-color-primary);
+}
+
+#container {
+  width: 100%;
+  min-height: 100vh;
+}
+
+#container strong {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+#container p {
+  font-size: 16px;
+  line-height: 22px;
+  color: #8c8c8c;
+  margin: 0;
+}
+
+#container a {
+  text-decoration: none;
+}
+.container{
+  padding: 10px;
+}
+
+.card{
+  background: #fff;
+  color: #222;
+  // background: #121212;
+  // color: #fafafa;
+  // border-color: #242424;
+  padding: 20px;
+  margin: 10px auto;
+  border-radius: 10px;
+  border: 1px solid #dedede;
+  box-shadow:0 .125rem .25rem rgba(0,0,0,.075);
+
+
+  .card_header{
+    display: flex;
+    justify-content: space-between;
+
+    .heading{
+      h5.section_title{
+        margin: 0;
+        padding: 0;
+        line-height: 8px;
+        font-size: 14px;
+      }
+      span.section_subheading{
+        font-size: 10px;
+      }
+    }
+
+    .recent_option{
+      button.recenter_btn{
+        background: none;
+        color: #adaaaa;
+        font-size: 14px;
+        font-weight: 800;
+        display: flex;
+        align-items: center;
+        span, ion-icon{
+          margin-left: 3px;
+          padding: 0;
+        }
+
+      }
+    }
+
+  }
+
+  .card_body{
+    margin-top: 20px;
+    ul{
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      list-style: none;
+      li{
+       .option{
+         .icon{
+           display: grid;
+           justify-content: center;
+           text-align: center;
+          font-size: 28px;
+         }
+         .label span{
+           font-size: 10px;
+         }
+       } 
+      }
+    }
+  }
+
+}

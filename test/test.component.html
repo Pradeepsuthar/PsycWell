@@ -1,0 +1,295 @@
+<section class="app_container">
+
+
+  <!-- Navbar -->
+  <nav class="bg-white">
+    <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+      <div class="relative flex items-center justify-between">
+        <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+          <!-- Mobile menu button-->
+          <button type="button"
+            class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+            aria-controls="mobile-menu" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+            <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+        <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
+          <div class="flex-shrink-0 flex items-center">
+            <h3 style="font-size: 28px;color: var(--primary);font-weight: 800;">PsycWell</h3>
+          </div>
+          <div class="hidden sm:block sm:ml-6">
+            <div class="flex space-x-4">
+              <div class="flex mr-8" style="display: flex;align-items: center;">
+                <form
+                  class="focus:border-light-blue-500 focus:ring-1 focus:ring-light-blue-500 focus:outline-none w-full text-sm text-black placeholder-gray-500 border border-gray-200 px-2 py-1"
+                  style="display: flex;align-items: center;border-radius: 8px;background: #b2b3bf;">
+                  <svg width="15" height="15" fill="white">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" />
+                  </svg>
+                  <input class="search_input" type="text" aria-label="Filter projects" placeholder="Search PsycWell" />
+                </form>
+                <button class="text-white ml-1"
+                  style="padding: 5px 20px;font-size: 12px;border-radius: 8px;background: var(--primary);">SEARCH</button>
+              </div>
+              <div>
+                <a href="#" class="a__nav_links" aria-current="page">Home</a>
+                <a href="#" class="a__nav_links">News</a>
+                <a href="#" class="a__nav_links">Opportunities</a>
+                <a href="#" class="a__nav_links active">Colleagues</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+          <div class="text-center grid">
+            <button type="button"
+              class="flex justify-center p-1 rounded-full text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
+              <span class="sr-only">View notifications</span>
+              <svg class="h-8 w-8" xmlns="http://www.w3.org/2000/svg" fill="var(--primary)" viewBox="0 0 24 24"
+                stroke="dark" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+              </svg>
+            </button>
+            <small class="text-gray-500">Notifications</small>
+          </div>
+          <!-- Profile dropdown -->
+          <div class="ml-3 relative">
+            <div class="text-center">
+              <button type="button" style="background: var(--primary);"
+                class="flex text-sm rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
+                id="user-menu-button" aria-expanded="false" aria-haspopup="true">
+                <span class="sr-only">Open user menu</span>
+                <img class="h-8 w-8 rounded-full border-2" style="border: 2px solid var(--primary);"
+                  src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                  alt=""/>
+              </button>
+              <small class="text-gray-500">Me</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile menu, show/hide based on menu state. -->
+    <div class="sm:hidden" id="mobile-menu">
+      <div class="px-2 pt-2 pb-3 space-y-1">
+        <a href="#" class="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium"
+          aria-current="page">Home</a>
+        <a href="#"
+          class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">News</a>
+        <a href="#"
+          class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Opportunities</a>
+        <a href="#"
+          class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Colleagues</a>
+      </div>
+    </div>
+  </nav>
+
+
+
+
+  <div class="body_container">
+    <div class="row">
+      <div class="col">
+        <!-- User Profile -->
+        <div class="card bg-white" style="height: 200px;margin-bottom: 40px;position: relative;">
+          <div style="position: absolute;top: 0;left: 0;width: 100%;height: 50%;background: var(--primary);"></div>
+          <div
+            style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;background: transparent;padding: 5px 10px;">
+            <div style="position: relative;width: 100%;height: 100%;display: grid;justify-content: start;align-items: center;">
+              <!-- Top Right Icons -->
+              <div class="icons" style="position: absolute;width: auto;top: 0;right: 0;color: #fff;">
+                <div style="display: flex;align-items: center;justify-content: end;">
+                  <span style="font-size: 12px;">Verified</span>
+                  <span>
+                    <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false"
+                      class="style-scope yt-icon" fill="white"
+                      style="pointer-events: none; display: block; width: 20px; height: 20px;margin-left:5px">
+                      <g class="style-scope yt-icon">
+                        <path d="M11,7l6,3.5L11,14V7L11,7z M18,20H4V6H3v15h15V20z M21,18H6V3h15V18z M7,17h13V4H7V17z"
+                          class="style-scope yt-icon"></path>
+                      </g>
+                    </svg>
+                  </span>
+                </div>
+                <div style="display: flex;align-items: center;justify-content: end;">
+                  <span style="font-size: 12px;">Accepting New Clients</span>
+                  <span>
+                    <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false"
+                      class="style-scope yt-icon" fill="white"
+                      style="pointer-events: none; display: block; width: 20px; height: 20px;margin-left:5px">
+                      <g class="style-scope yt-icon">
+                        <path d="M11,7l6,3.5L11,14V7L11,7z M18,20H4V6H3v15h15V20z M21,18H6V3h15V18z M7,17h13V4H7V17z"
+                          class="style-scope yt-icon"></path>
+                      </g>
+                    </svg>
+                  </span>
+                </div>
+                <div style="display: flex;align-items: center;justify-content: end;">
+                  <span style="font-size: 12px;">Telehealth</span>
+                  <span>
+                    <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false"
+                      class="style-scope yt-icon" fill="white"
+                      style="pointer-events: none; display: block; width: 20px; height: 20px;margin-left:5px">
+                      <g class="style-scope yt-icon">
+                        <path d="M11,7l6,3.5L11,14V7L11,7z M18,20H4V6H3v15h15V20z M21,18H6V3h15V18z M7,17h13V4H7V17z"
+                          class="style-scope yt-icon"></path>
+                      </g>
+                    </svg>
+                  </span>
+                </div>
+              </div>
+
+
+              <!-- User Profile -->
+              <div style="width: 700px;height: auto;padding: 0 50px;display: flex;align-items: center;position: relative;">
+
+                <div>
+                  <img style="border: 2px solid var(--primary);width: 150px;height: 150px;border-radius: 100%;"
+                  src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                  alt="">
+                </div>
+                <div style="margin-left: 50px;">
+                  <div class="username" style="color: #fff;display: flex;align-items: baseline;position: absolute;top: 35px;">
+                    <h1 style="font-size: 32px;font-weight: 800;font-family: sans-serif;">Jonathan Crane</h1><span class="ml-2" style="font-weight: 600;">,PhD, ABPP-CN</span>
+                  </div>
+                  <div style="margin-top: 80px;">
+                    <p style="font-size: 12px;color: var(--primary);font-weight: 600;">Clinical Psycologist atTringle Clinice</p>
+                    <p style="font-size: 12px;color: gray;font-weight: 600;">Raleigh, North Carnolia - United States</p>
+                    <p style="font-size: 12px;color: gray;font-weight: 600;">
+                      <span style="color: green;">239 Connections</span>
+                      <span>11 Manual Connections</span>
+                    </p>
+                    <a href="mailto:" style="font-size: 12px;color: var(--primary);font-weight: 600;">psycWell.com/j.crane2</a>
+                  </div>
+                </div>
+                <div>
+
+                </div>
+              </div>
+
+
+
+              <!-- Bottom Right Options Buttons -->
+              <div class="options" style="position: absolute;width: auto;bottom: 10px;right: 0;">
+                <div style="display: flex;align-items: center;">
+                  <button type="button" style="background: var(--primary);color: #fff;font-size: 12px;border-radius: 8px;padding: 8px 15px;margin: 0 5px;">CONNECT</button>
+                  <button type="button" style="background: var(--primary);color: #fff;font-size: 12px;border-radius: 8px;padding: 8px 15px;margin: 0 5px;">FOLLOW</button>
+                  <button type="button" style="background: var(--success);color: #fff;font-size: 12px;border-radius: 8px;padding: 8px 15px;margin: 0 5px;">MESSAGE</button>
+                  <span style="cursor: pointer;">
+                    <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false"
+                      class="style-scope yt-icon"
+                      style="pointer-events: none; display: block; width: 30px; height: 30px;">
+                      <g class="style-scope yt-icon">
+                        <path
+                          d="M7.5,12c0,0.83-0.67,1.5-1.5,1.5S4.5,12.83,4.5,12s0.67-1.5,1.5-1.5S7.5,11.17,7.5,12z M12,10.5c-0.83,0-1.5,0.67-1.5,1.5 s0.67,1.5,1.5,1.5s1.5-0.67,1.5-1.5S12.83,10.5,12,10.5z M18,10.5c-0.83,0-1.5,0.67-1.5,1.5s0.67,1.5,1.5,1.5s1.5-0.67,1.5-1.5 S18.83,10.5,18,10.5z"
+                          class="style-scope yt-icon"></path>
+                      </g>
+                    </svg>
+                    </span>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+        <div class="details_card_row">
+          <div class="card_col mr-4">
+            <!-- Start Card -->
+            <div class="card bg-white" style="padding-bottom: 20px;margin-bottom: 40px;">
+              <div class="header" style="display: flex;align-items: center;justify-content: space-between;">
+                <h5 style="font-size: 12px;color: gray;font-weight: 600;">License Information</h5>
+                <span style="cursor: pointer;">
+                  <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false"
+                    class="style-scope yt-icon"
+                    style="pointer-events: none; display: block; width: 30px; height: 30px;">
+                    <g class="style-scope yt-icon">
+                      <path
+                        d="M7.5,12c0,0.83-0.67,1.5-1.5,1.5S4.5,12.83,4.5,12s0.67-1.5,1.5-1.5S7.5,11.17,7.5,12z M12,10.5c-0.83,0-1.5,0.67-1.5,1.5 s0.67,1.5,1.5,1.5s1.5-0.67,1.5-1.5S12.83,10.5,12,10.5z M18,10.5c-0.83,0-1.5,0.67-1.5,1.5s0.67,1.5,1.5,1.5s1.5-0.67,1.5-1.5 S18.83,10.5,18,10.5z"
+                        class="style-scope yt-icon"></path>
+                    </g>
+                  </svg>
+                </span>
+              </div>
+              <div class="body">
+                <div style="display: flex;align-items: center;">
+                  <label for="" style="font-size: 12px;font-weight: 600;color: var(--primary);">License State:</label>
+                  <span style="font-size: 12px;font-weight: 600;color: #222;margin-left: 10px;">North carolina</span>
+                </div>
+                <div style="display: flex;align-items: center;">
+                  <label for="" style="font-size: 12px;font-weight: 600;color: var(--primary);">License State:</label>
+                  <span style="font-size: 12px;font-weight: 600;color: #222;margin-left: 10px;">North carolina</span>
+                </div>
+              </div>
+            </div>
+            <!-- End Card -->
+            <!-- Start Card -->
+            <div class="card bg-white" style="padding-bottom: 20px;margin-bottom: 40px;">
+              <div class="header" style="display: flex;align-items: center;justify-content: space-between;">
+                <h5 style="font-size: 12px;color: gray;font-weight: 600;">License Information</h5>
+                <span style="cursor: pointer;">
+                  <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false"
+                    class="style-scope yt-icon"
+                    style="pointer-events: none; display: block; width: 30px; height: 30px;">
+                    <g class="style-scope yt-icon">
+                      <path
+                        d="M7.5,12c0,0.83-0.67,1.5-1.5,1.5S4.5,12.83,4.5,12s0.67-1.5,1.5-1.5S7.5,11.17,7.5,12z M12,10.5c-0.83,0-1.5,0.67-1.5,1.5 s0.67,1.5,1.5,1.5s1.5-0.67,1.5-1.5S12.83,10.5,12,10.5z M18,10.5c-0.83,0-1.5,0.67-1.5,1.5s0.67,1.5,1.5,1.5s1.5-0.67,1.5-1.5 S18.83,10.5,18,10.5z"
+                        class="style-scope yt-icon"></path>
+                    </g>
+                  </svg>
+                </span>
+              </div>
+              <div class="body">
+                <div style="display: flex;align-items: center;">
+                  <span>
+                    <svg version="1.1" viewBox="0 0 36 36" style="width: 25px;height:25px">
+                      <use class="ytp-svg-shadow" xlink:href="#ytp-id-20"></use>
+                      <path
+                        d="M25,17 L17,17 L17,23 L25,23 L25,17 L25,17 Z M29,25 L29,10.98 C29,9.88 28.1,9 27,9 L9,9 C7.9,9 7,9.88 7,10.98 L7,25 C7,26.1 7.9,27 9,27 L27,27 C28.1,27 29,26.1 29,25 L29,25 Z M27,25.02 L9,25.02 L9,10.97 L27,10.97 L27,25.02 L27,25.02 Z"
+                        fill="gray" id="ytp-id-20"></path>
+                    </svg>
+                  </span>
+                  <label for="" style="font-size: 12px;font-weight: 600;color: var(--primary);">License State:</label>
+                  <span style="font-size: 12px;font-weight: 600;color: #222;margin-left: 10px;">North carolina</span>
+                </div>
+                <div style="display: flex;align-items: center;">
+                  <label for="" style="font-size: 12px;font-weight: 600;color: var(--primary);">License State:</label>
+                  <span style="font-size: 12px;font-weight: 600;color: #222;margin-left: 10px;">North carolina</span>
+                </div>
+                <div style="display: flex;align-items: center;">
+                  <label for="" style="font-size: 12px;font-weight: 600;color: var(--primary);">License State:</label>
+                  <span style="font-size: 12px;font-weight: 600;color: #222;margin-left: 10px;">North carolina</span>
+                </div>
+              </div>
+            </div>
+            <!-- End Card -->
+            <div class="card bg-white" style="height: 200px;margin-bottom: 40px;">Licence Information</div>
+          </div>
+          <div class="card_col">
+            <div class="card bg-white" style="height: 150px;margin-bottom: 40px;">Licence Information</div>
+            <div class="card bg-white" style="height: 100px;margin-bottom: 40px;">Licence Information</div>
+            <div class="card bg-white" style="height: 180px;margin-bottom: 40px;">Licence Information</div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card bg-white" style="height: 300px;margin-bottom: 40px;">Licence Information</div>
+        <div class="card bg-white" style="height: 300px;margin-bottom: 40px;">Licence Information</div>
+      </div>
+    </div>
+  </div>
+
+
+</section>
