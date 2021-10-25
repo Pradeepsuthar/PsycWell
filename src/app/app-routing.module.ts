@@ -1,11 +1,10 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
-import { TestComponent } from './test/test.component';
 
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'test',
+    redirectTo: 'test-app',
     // redirectTo: 'folder/Inbox',
     pathMatch: 'full'
   },
@@ -14,9 +13,9 @@ const routes: Routes = [
     loadChildren: () => import('./folder/folder.module').then( m => m.FolderPageModule)
   },
   {
-    path:'test',
-    component: TestComponent
-  }
+    path: 'test-app',
+    loadChildren: () => import('./TestModule/test.module').then( m => m.TestModule)
+  },
 ];
 
 @NgModule({
